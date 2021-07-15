@@ -17,6 +17,23 @@
             <directory suffix=".php">./app</directory>
         </include>
     </coverage>
+    <listeners>
+        <listener class="JohnKary\PHPUnit\Listener\SpeedTrapListener">
+            <arguments>
+                <array>
+                    <element key="slowThreshold">
+                        <integer>500</integer>
+                    </element>
+                    <element key="reportLength">
+                        <integer>10</integer>
+                    </element>
+                    <element key="stopOnSlow">
+                        <boolean>false</boolean>
+                    </element>
+                </array>
+            </arguments>
+        </listener>
+    </listeners>
     <php>
         <server name="APP_ENV" value="testing"/>
         <server name="BCRYPT_ROUNDS" value="4"/>
