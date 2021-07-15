@@ -183,6 +183,11 @@ return [
         \LaravelDoctrine\Extensions\GedmoExtensionsServiceProvider::class,
         \LaravelDoctrine\Extensions\BeberleiExtensionsServiceProvider::class,
 
+        /*
+         * Application namespace
+         */
+        \Application\Providers\RepositoryProvider::class,
+
     ],
 
     /*
