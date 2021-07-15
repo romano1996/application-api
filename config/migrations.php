@@ -51,7 +51,7 @@ return [
         |    directory/2020/01/
         |
          */
-        'organize_migrations' => false,
+        'organize_migrations' => true,
         /*
         |--------------------------------------------------------------------------
         | Migration Namespace
